@@ -17,7 +17,8 @@ public class CorsConfig {
         // allow requests from React frontend
         config.setAllowedOrigins(List.of(
                 "http://localhost:5173",
-                "http://localhost:3000"
+                "http://localhost:3000",
+                "https://sponsorbridge-frontend.vercel.app"
         ));
 
         // allow these HTTP methods
