@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: sponsorbridge-backend
+    runtime: java
+    buildCommand: ./mvnw clean install -DskipTests
+    startCommand: java -jar target/sponsorbridge-0.0.1-SNAPSHOT.jar
+    envVars:
+      - key: JAVA_VERSION
+        value: 21
